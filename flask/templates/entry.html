@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{title}}</h2>
+
+<form method='post' action='/search'>
+  <p>Phrase to work with:</p>
+  <input name='phrase' type='text'/><br/>
+
+  <p>Letters to search into the phrase:</p>
+  <input name='letters' type='text'/><br/>
+  
+  <input value='Do it!' type='submit'/>
+</form>
+
+{% endblock %}
